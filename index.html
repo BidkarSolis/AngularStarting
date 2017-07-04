@@ -6,15 +6,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 </head>
 <body>
+<div ng-app="">
   <!--
-  <div ng-app="">
-    <p>Name: <input type="text" ng-model="name"></input>
-    <h1>Hello {{name}}</h1>
-  </div-->
-  <div ng-app>
-  <input type="text" ng-model="dato" />
-  {{dato}}
-  <input type="button" value="hola" ng-click="dato='hola'" />
+  <p>Name: <input type="text" ng-model="name"></p>
+  {{name}}-->
+
+  <input type="text" ng-model="dato">
+  <p ng-bind="dato"></p>
+  <input type="button" value="Hola" ng-click="dato='Hello'"
 </div>
 
 </body>
